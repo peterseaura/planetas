@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quantum Garden - v11</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="gameCanvas"></canvas>
+
+  <div id="ui">
+    <div class="info">Vida: <span id="vida">100</span></div>
+    <div class="info">Pontos: <span id="pontos">0</span></div>
+    <div class="info">Nível: <span id="nivel">1</span></div>
+  </div>
+
+  <div id="startScreen">
+    <h1>QUANTUM GARDEN</h1>
+    <p>Colete energia, derrote os bosses</p>
+    <button id="startBtn">JOGAR</button>
+  </div>
+
+  <div id="gameOverScreen" class="hidden">
+    <h1>GAME OVER</h1>
+    <p>Pontuação: <span id="pontuacaoFinal">0</span></p>
+    <button id="restartBtn">JOGAR NOVAMENTE</button>
+  </div>
+
+  <!-- Carrega os scripts na ordem certa -->
+  <script src="js/universo.js"></script>
+  <script src="js/player.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
